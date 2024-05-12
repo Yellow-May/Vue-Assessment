@@ -1,8 +1,8 @@
-<script setup>
+<!-- <script setup lang="ts">
 import { VueQueryDevtools } from "@tanstack/vue-query-devtools";
-</script>
+</script> -->
 
 <template>
     <router-view />
-    <vue-query-devtools />
+    <!-- <vue-query-devtools /> -->
 </template>

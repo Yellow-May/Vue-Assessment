@@ -3,7 +3,7 @@ import { createApp } from "vue";
 import { defaultConfig, plugin } from "@formkit/vue";
 import { VueQueryPlugin } from "@tanstack/vue-query";
 import VueSkeletonLoader from "vue3-skeleton-loader";
-import App from "./App.vue";
+import App from "./components/App.vue";
 import router from "./router";
 import formkitConfig from "./config/formkit.config";
 import "vue3-skeleton-loader/dist/style.css";
