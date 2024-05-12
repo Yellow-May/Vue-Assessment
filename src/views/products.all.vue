@@ -116,8 +116,9 @@ watch(data, (new_data) => {
                     </div>
                 </div>
 
-                <div v-if="total_pages && total_pages > PER_PAGE" class="py-10 flex justify-center">
-                    <paginate :page="page" :per_page="PER_PAGE" :total_pages="total_pages" @change="p => page = p" />
+                <div v-if="total_pages && total_pages >= PER_PAGE" class="py-10 flex justify-center">
+                    <paginate :page="page" :per_page="PER_PAGE" :total_pages="total_pages"
+                        @change="(p: number) => page = p" />
                 </div>
             </div>
         </section>

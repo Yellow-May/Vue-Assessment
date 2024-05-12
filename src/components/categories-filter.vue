@@ -19,7 +19,7 @@ function handle_change(id: number | null) {
 <template>
     <div>
         <div class="mb-2 border-b pb-2 border-white flex items-center justify-between">
-            <span class="block leading-none text-sm font-semibold">Filter by
+            <span class="block leading-none text-sm md:text-base font-semibold">Filter by
                 Categories</span>
 
             <button class="text-sm text-red-600 font-semibold p-0 leading-none"
@@ -32,9 +32,10 @@ function handle_change(id: number | null) {
 
         <template v-else-if="data?.data">
             <div class="flex flex-wrap gap-3">
-                <div v-for="cat in data.data" :key="cat.id" class="flex items-center gap-1 text-xs leading-none">
+                <div v-for="cat in data.data" :key="cat.id"
+                    class="flex items-center gap-1 text-xs md:text-sm leading-none">
                     <input type="radio" name="category" :id="cat.id" :checked="category === cat.id"
-                        @input="() => handle_change(cat.id)" class="accent-gray-800">
+                        @input="() => handle_change(cat.id)" class="accent-gray-800 md:h-4 md:w-4">
                     <label :for="cat.id">{{ cat.name }}</label>
                 </div>
             </div>
