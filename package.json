@@ -1,0 +1,35 @@
+{
+  "name": "fe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@formkit/icons": "^1.6.2",
+    "@formkit/vue": "^1.6.2",
+    "@tanstack/vue-query": "^5.35.5",
+    "@tanstack/vue-query-devtools": "^5.35.5",
+    "@vuesimple/vs-toast": "^3.0.6",
+    "axios": "^1.6.8",
+    "lucide-vue-next": "^0.378.0",
+    "tailwind-merge": "^2.3.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2",
+    "vue3-cookies": "^1.0.6",
+    "vue3-skeleton-loader": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
