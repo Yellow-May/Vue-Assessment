@@ -86,7 +86,7 @@ watch(data, (new_data) => {
                 </div>
 
                 <div v-if="isLoading || isFetching" class="min-h-[400px] md:min-h-[500px]">
-                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
                         <div v-for="i in 4" :key="i" class="w-full md:w-[240px] p-3 border rounded shadow">
                             <div class="flex flex-col gap-3 items-center">
                                 <v-skeleton type="avatar" />
@@ -106,7 +106,7 @@ watch(data, (new_data) => {
 
                 <div v-else-if="data?.data">
                     <div v-if="data.data.data.length > 0"
-                        class="min-h-[400px] md:min-h-[500px] grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+                        class="min-h-[400px] md:min-h-[500px] grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5">
                         <div v-for="product in data.data.data" :key="product.id" class="flex justify-center">
                             <product-card :product="product" />
                         </div>
